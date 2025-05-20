@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Register</h2>
+        <form action="connect.php" method="post">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" required name="username">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" required name="email">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" required name="password">
+            </div>
+
+            <!-- Register button styled as Canva button -->
+            <button type="submit" class="canva-btn">Register</button>
+
+            <p class="existing-account">Already have an account? <a href="login.html" class="canva-btn alt">Login</a></p>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: 'Merienda', cursive;
+            background: linear-gradient(to right, #ffe9e4, #fcd8d4);
+            text-align: center;
+            padding-top: 50px;
+            color: #5f0505;
+        }
+
+        form {
+            background: #fff5f5;
+            padding: 30px;
+            border-radius: 20px;
+            display: inline-block;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 12px 18px;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            font-family: 'Merienda', cursive;
+            font-size: 1rem;
+            width: 250px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #fcb69f;
+            box-shadow: 0 0 10px rgba(252, 182, 159, 0.4);
+        }
+
+        .login-btn {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            color: #3a1f1f;
+            font-family: 'Merienda', cursive;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .login-btn:hover {
+            background: linear-gradient(135deg, #a1c4fd 0%, #ec8c8c 100%);
+            color: #2f2f2f;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-btn:active {
+            transform: scale(0.97);
+        }
+    </style>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form action="login.php" method="POST">
+        <label>Username:</label><br>
+        <input type="text" name="username" required><br><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+        <button type="submit" class="login-btn">Login</button>
+    </form>
+</body>
+</html>
